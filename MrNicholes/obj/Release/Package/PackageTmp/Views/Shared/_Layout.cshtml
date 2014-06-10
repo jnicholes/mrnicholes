@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrNicholes | @ViewBag.Title</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  @Styles.Render("~/Content/css")
+  @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+  <div class="units-row units-padding end">
+    <div class="unit-100">
+      <nav class="navbar">
+        <ul>
+          <li>@Html.ActionLink("Home", "Index", "Home")</li>
+          <li>@Html.ActionLink("About Us", "About", "Home")</li>
+          <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+        </ul>
+      </nav>
+    </div>
+    
+  </div>
+  
+
+  @RenderBody()
+
+
+  @Scripts.Render("~/bundles/jquery")
+  @RenderSection("scripts", required: false)
+</body>
+</html>
