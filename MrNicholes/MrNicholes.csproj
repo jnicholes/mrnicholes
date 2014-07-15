@@ -127,7 +127,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\Bootstrap\bootstrap-theme.css.map" />
     <Content Include="Content\Bootstrap\bootstrap.css.map" />
-    <None Include="Properties\PublishProfiles\mrnicholes.com - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\mrnicholes.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
