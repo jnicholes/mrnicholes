@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
@@ -27,27 +28,36 @@ namespace MrNicholes.Controllers
       return View();
     }
 
-    public ActionResult GetHostEntry(string hostname)
+    public ActionResult GetHostEntry(string hostname, string dnsServer)
     {
-      var response = GetText(hostname, "8.8.8.8");
-      var parsedResponse = response.Where(x => !string.IsNullOrEmpty(x)).Select(x => x.Replace("\t", "").Replace(" ", "")).ToList();
-      return Json(parsedResponse, JsonRequestBehavior.AllowGet);
+      var response = NsLookup(hostname, dnsServer);
+      return Json(response, JsonRequestBehavior.AllowGet);
     }
 
-    private List<string> GetText(string host, string dnsServer)
+    private static IEnumerable<string> NsLookup(string host, string dnsServer, string recordType = "A")
     {
-      var info = new ProcessStartInfo("nslookup");
-      info.Arguments = host + " " + dnsServer;
       var text = new List<string>();
-      info.RedirectStandardOutput = true;
-      info.UseShellExecute = false;
-      info.CreateNoWindow = true;
-      var process = System.Diagnostics.Process.Start(info);
-      process.OutputDataReceived += (sender, args) => { text.Add(args.Data); };
+      var process = new Process();
+      var startInfo = new ProcessStartInfo("nslookup");
+
+      startInfo.Arguments = "-q=" + recordType + " " + host + " " + dnsServer;
+      startInfo.RedirectStandardOutput = true;
+      startInfo.UseShellExecute = false;
+      startInfo.CreateNoWindow = true;
+      
+      process.StartInfo = startInfo;
+      process.OutputDataReceived += (sender, args) => text.Add(FormatString(args.Data));
+
       process.Start();
       process.BeginOutputReadLine();
       process.WaitForExit();
+
       return text;
+    }
+
+    private static string FormatString(string input)
+    {
+      return input;
     }
   }
 }
