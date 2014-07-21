@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace MrNicholes
 {
@@ -20,11 +19,15 @@ namespace MrNicholes
       // Use the development version of Modernizr to develop with and learn from. Then, when you're
       // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
       bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                  "~/Scripts/modernizr-*"));
+        "~/Scripts/modernizr-*"));
 
       bundles.Add(new StyleBundle("~/Styles/bootstrap")
         .Include("~/Content/Bootstrap/bootstrap.css")
         .Include("~/Content/site.css"));
+
+      bundles.Add(new StyleBundle("~/Styles/kube")
+        .Include("~/Content/Kube/css/kube.css")
+        .Include("~/Content/Site.css"));
 
       // Set EnableOptimizations to false for debugging. For more information,
       // visit http://go.microsoft.com/fwlink/?LinkId=301862
