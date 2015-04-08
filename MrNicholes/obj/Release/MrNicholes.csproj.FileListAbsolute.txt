@@ -50,3 +50,29 @@ E:\src\MrNicholes\MrNicholes\bin\System.Web.Optimization.xml
 E:\src\MrNicholes\MrNicholes\obj\Release\MrNicholes.csprojResolveAssemblyReference.cache
 E:\src\MrNicholes\MrNicholes\obj\Release\MrNicholes.dll
 E:\src\MrNicholes\MrNicholes\obj\Release\MrNicholes.pdb
+E:\Research Projects\mrnicholes\MrNicholes\bin\MrNicholes.dll.config
+E:\Research Projects\mrnicholes\MrNicholes\bin\MrNicholes.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\MrNicholes.pdb
+E:\Research Projects\mrnicholes\MrNicholes\bin\Antlr3.Runtime.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\Microsoft.Web.Infrastructure.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\Newtonsoft.Json.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Helpers.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Mvc.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Optimization.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Razor.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.Deployment.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.Razor.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\WebGrease.dll
+E:\Research Projects\mrnicholes\MrNicholes\bin\Antlr3.Runtime.pdb
+E:\Research Projects\mrnicholes\MrNicholes\bin\Newtonsoft.Json.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Helpers.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Mvc.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Razor.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.Deployment.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.WebPages.Razor.xml
+E:\Research Projects\mrnicholes\MrNicholes\bin\System.Web.Optimization.xml
+E:\Research Projects\mrnicholes\MrNicholes\obj\Release\MrNicholes.csprojResolveAssemblyReference.cache
+E:\Research Projects\mrnicholes\MrNicholes\obj\Release\MrNicholes.dll
+E:\Research Projects\mrnicholes\MrNicholes\obj\Release\MrNicholes.pdb
